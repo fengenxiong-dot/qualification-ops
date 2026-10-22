@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>任职资格认证运营台</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/review.css" />
+  <link rel="stylesheet" href="/online.css" />
+  <link rel="stylesheet" href="/standards.css" />
+  <link rel="stylesheet" href="/matrix.css" />
+  <link rel="stylesheet" href="/evidence.css" />
+  <link rel="stylesheet" href="/personnel.css" />
+  <link rel="stylesheet" href="/design.css?v=20260908" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">GLR</span><div><strong>任职资格认证</strong><small>Certification Operations</small></div></div>
+      <nav>
+        <div class="nav-group" data-nav-group="standards">
+          <button class="nav-group-title" type="button" aria-expanded="false" aria-controls="standards-submenu"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h12a2 2 0 0 1 2 2v14H7a3 3 0 0 1-3-3V5a1 1 0 0 1 1-1Z"/><path d="M4 16h15M8 8h7M8 11h5"/></svg></span>资格标准</button>
+          <div id="standards-submenu" class="nav-submenu" hidden>
+            <button class="nav-item nav-subitem" data-view="standards">标准开发</button>
+            <button class="nav-item nav-subitem" data-view="standard-archive">标准存档</button>
+          </div>
+        </div>
+        <div class="nav-group" data-nav-group="evidence">
+          <button class="nav-group-title" type="button" aria-expanded="false" aria-controls="evidence-submenu"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 8V5h6l2 3h10v11H3Z"/><path d="M8 12h8M8 15h5"/></svg></span>材料举证</button>
+          <div id="evidence-submenu" class="nav-submenu" hidden>
+          <button class="nav-item nav-subitem" data-view="evidence-tasks">举证配置</button>
+          <button class="nav-item nav-subitem active" data-view="dashboard">举证进度</button>
+          <button class="nav-item nav-subitem" data-view="import">批量导入</button>
+          </div>
+        </div>
+        <div class="nav-group" data-nav-group="review">
+          <button class="nav-group-title" type="button" aria-expanded="false" aria-controls="review-submenu"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 4-5 8-8 9-3-1-8-5-8-9V6Z"/><path d="m8 12 3 3 5-6"/></svg></span>资格评审</button>
+          <div id="review-submenu" class="nav-submenu" hidden>
+          <button class="nav-item nav-subitem" data-view="assignments">评审配置</button>
+          <button class="nav-item nav-subitem" data-view="my-reviews">我的评审</button>
+          </div>
+        </div>
+        <button class="nav-item" data-view="results"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 16v-3m5 3V8m5 8v-6"/></svg></span>结果看板</button>
+        <button class="nav-item" data-view="personnel"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 20v-3a6 6 0 0 1 12 0v3m3-12h4m-4 5h4m-4 5h4"/></svg></span>人员职级</button>
+        <button class="nav-item" data-view="operations"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 17.5h.01M12 7.5h5M12 17.5h5"/></svg></span>系统运维</button>
+      </nav>
+      <div class="sidebar-foot"><span class="status-dot"></span>本地服务运行中</div>
+    </aside>
+    <main>
+      <header class="topbar"><div><p class="eyebrow">任职资格体系运营</p><h1 id="page-title">材料举证</h1></div><div class="topbar-actions"><div id="identity-switcher"></div><button class="primary compact" id="header-import">＋ 批量导入</button></div></header>
+      <div id="app"></div>
+    </main>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="/matrix-core.js"></script>
+  <script src="/standards.js"></script>
+  <script src="/matrix-ui.js"></script>
+  <script src="/evidence.js"></script>
+  <script src="/review-items.js"></script>
+  <script src="/personnel.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
